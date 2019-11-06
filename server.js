@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.use('/api/users', require('./routes/users'));
+app.use('/api/event', require('./routes/event'));
 
 const port  = 5000;
 
