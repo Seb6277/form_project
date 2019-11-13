@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "dev" : "concurrently \"nodemon server.js\" \"npm start --prefix=client\""
+    "dev" : "concurrently \"nodemon server.js\" \"npm start --prefix=client\"",
+    "test": "mocha server.test.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,9 @@
     "mongoose": "^5.7.8"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "concurrently": "^5.0.0",
+    "mocha": "^6.2.2",
     "nodemon": "^1.19.4"
   }
 }

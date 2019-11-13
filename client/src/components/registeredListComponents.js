@@ -4,7 +4,7 @@ class RegisteredList extends React.Component{
     render() {
         return (
             <div>
-                <h1>Liste des inscrits : </h1>
+                <h2>Liste des inscrits : </h2>
             </div>
         );
     }
