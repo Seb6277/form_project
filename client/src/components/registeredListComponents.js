@@ -9,17 +9,6 @@ class RegisteredList extends React.Component{
         }
     }
 
-    generateList() {
-        const userList = this.state.userList;
-        userList.map((user) => {
-            return(
-                <p key={user}>
-                    {user}
-                </p>
-            )
-        })
-    }
-
     render() {
         return (
             <div>
