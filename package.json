@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "dev" : "concurrently \"nodemon server.js\" \"npm start --prefix=client\"",
+    "dev": "concurrently \"nodemon server.js\" \"npm start --prefix=client\"",
     "test": "mocha server.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.7.8"
   },

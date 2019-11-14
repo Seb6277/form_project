@@ -10,7 +10,7 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    "birth": {
+    "birthday": {
         type: String,
         required: true
     },
