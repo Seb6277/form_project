@@ -10,7 +10,7 @@ class RegisterComponent extends React.Component{
             name: "",
             lastname: "",
             birth: "",
-            passion: ""
+            passion: "",
         }
     }
 
@@ -37,6 +37,8 @@ class RegisterComponent extends React.Component{
             lastname: this.state.lastname,
             birthday: this.state.birth,
             passion: this.state.passion
+        }).then(() => {
+            this.props.update()
         }).catch((error) => console.log(error))
     }
 
