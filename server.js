@@ -8,7 +8,8 @@ app.use(express.json());
 
 mongoose.connect(mongodbUrl, {
     dbName: "form_project",
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 }).then(() => {
     console.log("mongodb connected ...");
 }).catch((err) => {
